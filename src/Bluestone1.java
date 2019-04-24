@@ -13,7 +13,7 @@ public class Bluestone1 {
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.bluestone.com");
 		driver.findElement(By.name("search_query")).sendKeys("rings");
-	//	driver.findElement(By.xpath("//input[contains(@name,'search') and @class='button']"));
+		driver.findElement(By.xpath("//input[contains(@name,'search') and @class='button']"));//enter rings
 		
 	}
 
