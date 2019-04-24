@@ -27,7 +27,7 @@ public class FirstCry {
 		List<WebElement> categories = driver.findElements(By.xpath("//div[@class=\"menu-container media-pros\"]/child::ul/li[not(starts-with(@class,'last'))]/a[not(@class='men_temp')]"));
 		for(int i=0;i<categories.size();i++) {
 			String CategoryText = categories.get(i).getText();
-			System.out.println(CategoryText);
+			System.out.println(CategoryText);//////////////////////////
 			act.moveToElement(categories.get(i)).build().perform();
 			Thread.sleep(2000);
 			List<WebElement> secondCategory = driver.findElements(By.xpath("//div[@class=\"menu-option-container menu1\"]/div[@class='options']/descendant::li[starts-with(@id,'submenu')]/a"));
